@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-heroku",
+  "version": "1.0.0",
+  "description": "Tutorial for running applications on Heroku",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meetKazuki/nodejs-heroku.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meetKazuki/nodejs-heroku/issues"
+  },
+  "homepage": "https://github.com/meetKazuki/nodejs-heroku#readme",
+  "engines": {
+    "node": "15.10.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.7"
+  }
+}
