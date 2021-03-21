@@ -1,9 +1,18 @@
 {
   "name": "node-heroku",
-  "scripts": {},
+  "scripts": {
+    "postdeploy": "psql $DATABASE_URL -f database/seed.sql"
+  },
   "env": {},
   "formation": {},
-  "addons": [],
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev",
+      "options": {
+        "version": "13.2"
+      }
+    }
+  ],
   "buildpacks": [
     {
       "url": "heroku/nodejs"
